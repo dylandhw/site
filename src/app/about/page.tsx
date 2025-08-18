@@ -1,0 +1,50 @@
+export default function About() {
+    return (
+      <main>
+        <h1 className="text-3xl mb-6">About</h1>
+        
+        <div className="space-y-4 text-sm leading-6">
+          <p>
+            I'm a student and software engineer at the University of Central Florida, majoring in Computer Science and minoring in Statistics. My completed and current coursework includes: <a className="text-gray-500" href="https://catalog.ucf.edu/courses/computer-science/computer-science-bs/" target="_blank" rel="noopener noreferrer">Data Structures, Algorithms, Computer Logic & Architecture, Algorithms for Machine Learning, Mobile Software Development, Advanced Statistics, and Calculus.</a>
+          </p>
+          <p>
+          My passions lie in machine learning, computer vision, space systems software, and Golang architecture [in no particular order].
+          </p>          
+          <p>
+            Outside the realm of technology, I enjoy film & digging myself down wikipedia rabbit holes :D.
+          </p>
+          
+          <h2 className="text-xl mt-8 mb-4">Experience</h2>
+          <p>
+            <a className="text-gray-500" target="_blank" rel="noopener noreferrer">Unfortuantely, I am currently in the process of receiving my Greencard - so please excuse a lack of indsutry experience. I have, however, done what I can with my limitations.</a> 
+          </p>
+          <div className="mb-6">
+          <h3 className="font-medium">
+  <a className="text-blue-500" href="https://draco.ucf.edu" target="_blank" rel="noopener noreferrer">DRACO</a> - Undergraduate Computer Engineering Researcher
+</h3>            <p className="text-gray-500 text-xs">March 2025 - Present</p>
+            <p className="mt-1">
+              Developed scalable business platforms for clients across industries. Built a full-stack voting platform handling 50K+ users/hour.
+            </p>
+          </div>
+
+          <div className="mb-6">
+          <h3 className="font-medium">
+  <a className="text-blue-500" href="https://devpulse.io" target="_blank" rel="noopener noreferrer">DevPulse</a> - Open Source Developer & Maintainer
+</h3>            <p className="text-gray-500 text-xs">July 2025 - Present</p>
+            <p className="mt-1">
+              Designed and delivered Vue.js courses from beginner to advanced levels with project-based curriculum.
+            </p>
+          </div>
+
+          <div className="mb-6">
+          <h3 className="font-medium">
+  <a className="text-blue-500" href="https://acm.ucf.edu" target="_blank" rel="noopener noreferrer">ACM Student Chapter</a> - Vice President
+</h3>            <p className="text-gray-500 text-xs">August 2024 - Present</p>
+            <p className="mt-1">
+              Designed and delivered Vue.js courses from beginner to advanced levels with project-based curriculum.
+            </p>
+          </div>
+        </div>
+      </main>
+    )
+  }
