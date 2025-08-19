@@ -5,7 +5,7 @@ export default function About() {
         
         <div className="space-y-4 text-sm leading-6">
           <p>
-            I'm a student and software engineer at the University of Central Florida, majoring in Computer Science and minoring in Statistics. My completed and current coursework includes: <a className="text-gray-500" href="https://catalog.ucf.edu/courses/computer-science/computer-science-bs/" target="_blank" rel="noopener noreferrer">Data Structures, Algorithms, Computer Logic & Architecture, Algorithms for Machine Learning, Mobile Software Development, Advanced Statistics, and Calculus.</a>
+            I&apos;m a student and software engineer at the University of Central Florida, majoring in Computer Science and minoring in Statistics. My completed and current coursework includes: <a className="text-gray-500" href="https://catalog.ucf.edu/courses/computer-science/computer-science-bs/" target="_blank" rel="noopener noreferrer">Data Structures, Algorithms, Computer Logic & Architecture, Algorithms for Machine Learning, Mobile Software Development, Advanced Statistics, and Calculus.</a>
           </p>
           <p>
           My passions lie in machine learning, computer vision, space systems software, and Golang architecture [in no particular order].
@@ -16,7 +16,7 @@ export default function About() {
           
           <h2 className="text-xl mt-8 mb-4">Experience</h2>
           <p>
-            <a className="text-gray-500" target="_blank" rel="noopener noreferrer">Unfortuantely, I am currently in the process of receiving my Greencard - so please excuse a lack of indsutry experience. I have, however, done what I can with my limitations.</a> 
+            <a className="text-gray-500" target="_blank" rel="noopener noreferrer">Unfortunately, I am currently in the process of receiving my Greencard - so please excuse a lack of industry experience. I have, however, done what I can with my limitations.</a> 
           </p>
           <div className="mb-6">
           <h3 className="font-medium">
@@ -41,7 +41,7 @@ export default function About() {
             --------------------------------------------------------------------------
             </p>
             <p className="mt-1">
-              These efforts not only accelerated the lab's workflow but also positioned our work for potential application in disaster-response systems, demonstrating the real-world impact of research conducted at DRACO.
+              These efforts not only accelerated the lab&apos;s workflow but also positioned our work for potential application in disaster-response systems, demonstrating the real-world impact of research conducted at DRACO.
             </p>
           </div>
 
@@ -51,13 +51,13 @@ export default function About() {
   <a className="text-blue-500" href="https://acm.ucf.edu" target="_blank" rel="noopener noreferrer">ACM Student Chapter</a> - Vice President
 </h3>            <p className="text-gray-500 text-xs">August 2024 - Present</p>
             <p className="mt-1">
-              As Vice President of the Association for Computing Machinery at UCF, I led the organization's transition toward a research-focused model, raising the technical caliber of student projects and strengthening collaborations with university labs. I designed and delivered hands-on workshops in computer vision, creating original instructional materials and codebases that engaged and upskilled members in applied AI.
+              As Vice President of the Association for Computing Machinery at UCF, I led the organization&apos;s transition toward a research-focused model, raising the technical caliber of student projects and strengthening collaborations with university labs. I designed and delivered hands-on workshops in computer vision, creating original instructional materials and codebases that engaged and upskilled members in applied AI.
             </p>
             <p className="mt-1">
             --------------------------------------------------------------------------
             </p>
             <p className="mt-1">
-              I also expanded the chapter's industry presence by forging connections with professionals, securing guest speakers, and initiating a grant program to fund student-led research, ultimately positioning the chapter as a hub for both technical growth and professional development.
+              I also expanded the chapter&apos;s industry presence by forging connections with professionals, securing guest speakers, and initiating a grant program to fund student-led research, ultimately positioning the chapter as a hub for both technical growth and professional development.
             </p>
             <p className="mt-1">
             --------------------------------------------------------------------------

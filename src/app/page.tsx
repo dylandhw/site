@@ -1,21 +1,9 @@
 "use client"
 
-import XIcon from "@/components/icons/XIcon"
 import { Github, NotebookText, Coffee } from "lucide-react"
 import Link from 'next/link'
-import { useState } from "react"
-import { SiSolana } from "react-icons/si"
 
 export default function Home() {
-  const [copied, setCopied] = useState(false)
-  const solanaAddress = "CVzTKtNwLouYs7ua2zMRshSS5LEKYUTE1mcwKqGXJcvP"
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(solanaAddress).then(() => {
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
-    })
-  }
 
   return (
     <>
@@ -26,7 +14,7 @@ export default function Home() {
       </p>
       <br />
       <p>
-        I believe software to be a gift; an extension of the mind to help solve 'unsolvable' problems.
+        I believe software to be a gift; an extension of the mind to help solve &apos;unsolvable&apos; problems.
       </p>
 
       <div className="flex flex-wrap gap-4 my-6">

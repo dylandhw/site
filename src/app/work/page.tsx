@@ -1,9 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaGlobe, FaDatabase, FaGamepad, FaGraduationCap, FaYoutube, FaSearch, FaSatellite, FaClosedCaptioning, FaSmile } from 'react-icons/fa';
-import { GiDragonHead } from 'react-icons/gi';
-import { MdHowToVote } from 'react-icons/md';
+import { FaSatellite, FaClosedCaptioning, FaSmile } from 'react-icons/fa';
 
 interface Project {
   title: string;
@@ -13,6 +11,7 @@ interface Project {
   languages: string[];
   details: string[];
   image?: string;
+  logo: React.ReactNode;
 }
 
 const projects: Project[] = [
@@ -21,6 +20,7 @@ const projects: Project[] = [
     repoUrl: "https://youtu.be/DGRLND8I02g?si=5957pycpotNDa542",
     description: "An AI-powered satellite traffic management system using hybrid neural networks to predict and prevent collisions in increasingly crowded low Earth orbit.",
     image: "/projects/OrbitAI.png",
+    logo: <FaSatellite className="text-cyan-600" />,
     languages: ["Python", "C#", "Three.js", "PyTorch", "Unity",],
     details: [
       "Implements a Gated Recurrent Network (GRU) to predict real-time satellite position trajectories over 180-step sequences using synthetic LEO satellite data.",
@@ -35,6 +35,7 @@ const projects: Project[] = [
     repoUrl: "https://github.com/dylandhw/certification-blockchain",
     description: "A tamper-proof blockchain system built in Go for recording and verifying event attendance certifications with cryptographic integrity and web interface.",
     image: "",
+    logo: <FaClosedCaptioning className="text-cyan-600" />,
     languages: ["Golang", "Rust", "PostgreSQL, React"],
     details: [
       "Implements a complete blockchain with SHA-256 hashing, block validation, and cryptographic chain linking to ensure data immutability.",
@@ -49,6 +50,7 @@ const projects: Project[] = [
     repoUrl: "https://devpost.com/software/moodsic-pjdgzm",
     description: "A machine learning based collision avoidance simulation for satellites in low earth orbit.",
     image: "/projects/Moodsic.png",
+    logo: <FaSmile className="text-cyan-600" />,
     languages: ["Python", "Django", "Typescript", "React", "OpenCV"],
     details: [
       "Supports multiple hashing algorithms: XxHash, Blake3, and Sha256 for different scan modes",
@@ -63,6 +65,7 @@ const projects: Project[] = [
     repoUrl: "https://github.com/dylandhw/imgcap",
     description: "A PyTorch-based image captioning model using CNN encoder and LSTM decoder architecture trained on the Flickr8K dataset to generate natural language descriptions of images.",
     image: "",
+    logo: <FaClosedCaptioning className="text-cyan-600" />,
     languages: ["Python", "PyTorch"],
     details: [
       "Implements an EncoderCNN class using pre-trained Inception v3 to extract visual features from input images and map them to embedding space.",
