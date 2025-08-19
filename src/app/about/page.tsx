@@ -15,9 +15,6 @@ export default function About() {
           </p>
           
           <h2 className="text-xl mt-8 mb-4">Experience</h2>
-          <p>
-            <a className="text-gray-500" target="_blank" rel="noopener noreferrer">Unfortunately, I am currently in the process of receiving my Greencard - so please excuse a lack of industry experience. I have, however, done what I can with my limitations.</a> 
-          </p>
           <div className="mb-6">
           <h3 className="font-medium">
   <a className="text-blue-500" href="https://draco.ucf.edu" target="_blank" rel="noopener noreferrer">DRACO</a> - Undergraduate Computer Engineering Researcher
