@@ -1,6 +1,5 @@
 import { getPostBySlug, getAllPosts } from '@/lib/blog'
 import { notFound } from 'next/navigation'
-import Comments from '@/components/Comments'
 
 export async function generateStaticParams() {
   const posts = getAllPosts()
@@ -27,7 +26,6 @@ export default async function BlogPost({ params }: PageProps) {
       <h1 className="text-2xl font-semibold underline mb-2">{post.title}</h1>
       <time className="text-sm text-gray-500 block mb-8">{post.date}</time>
       {post.content}
-      <Comments />
     </article>
   )
 }

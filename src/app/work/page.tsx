@@ -13,32 +13,43 @@ interface Project {
   languages: string[];
   details: string[];
   image?: string;
-  logo: React.ReactNode;
 }
 
 const projects: Project[] = [
   {
     title: "OrbitAI - Satellite Collision Avoidance Simulation",
     repoUrl: "https://youtu.be/DGRLND8I02g?si=5957pycpotNDa542",
-    description: "A machine learning based collision avoidance simulation for satellites in low earth orbit.",
-    logo: <FaSatellite className="text-cyan-600" />,
-    image: "/projects/deduck.png",
-    languages: ["Python", "C#", "Three.js", "PyTorch", "Unity", "Git"],
+    description: "An AI-powered satellite traffic management system using hybrid neural networks to predict and prevent collisions in increasingly crowded low Earth orbit.",
+    image: "/projects/OrbitAI.png",
+    languages: ["Python", "C#", "Three.js", "PyTorch", "Unity",],
     details: [
-      "Supports multiple hashing algorithms: XxHash, Blake3, and Sha256 for different scan modes",
-      "Filter files by extension and size with recursive directory scanning",
-      "Quarantine duplicates safely with restoration capabilities",
-      "Generate detailed reports showing files found, deleted, and total bytes saved",
-      "Built with Rust for high performance and memory safety"
+      "Implements a Gated Recurrent Network (GRU) to predict real-time satellite position trajectories over 180-step sequences using synthetic LEO satellite data.",
+      "Utilizes Graph Neural Networks (GNN) to coordinate satellites as dynamic nodes and predict high-risk interactions between spacecraft in orbital space.",
+      "Features a Unity-based 3D orbital simulator that visualizes collision scenarios and avoidance maneuvers with live AI predictions and trajectory modeling.",
+      "Deploys the machine learning model on AWS EC2 with Flask server and WebSocket communication for real-time inference between simulation and AI backend.",
+      "Addresses the critical problem of space debris collision avoidance as satellite populations are projected to exceed 100,000 active satellites in LEO by 2030."
+    ]
+  },
+  {
+    title: "Certification Blockchain System",
+    repoUrl: "https://github.com/dylandhw/certification-blockchain",
+    description: "A tamper-proof blockchain system built in Go for recording and verifying event attendance certifications with cryptographic integrity and web interface.",
+    image: "",
+    languages: ["Golang", "Rust", "PostgreSQL, React"],
+    details: [
+      "Implements a complete blockchain with SHA-256 hashing, block validation, and cryptographic chain linking to ensure data immutability.",
+      "Features a web-based submission system with HTML forms for attendees to register their event participation through a Go HTTP server.",
+      "Includes persistent JSON storage with automatic blockchain state saving and loading between application restarts.",
+      "Provides QR code generation functionality to create quick links for easy access to the certification submission forms.",
+      "Designed with extensible architecture supporting planned features like PostgreSQL integration, Rust validation engine, and React frontend"
     ]
   },
   {
     title: "MOODSIC - Emotion Detecting Music Player",
-    repoUrl: "https://youtu.be/DGRLND8I02g?si=5957pycpotNDa542",
+    repoUrl: "https://devpost.com/software/moodsic-pjdgzm",
     description: "A machine learning based collision avoidance simulation for satellites in low earth orbit.",
-    logo: <FaSmile className="text-cyan-600" />,
-    image: "/projects/deduck.png",
-    languages: ["Python", "Typescript", "React", "CNN", "Git"],
+    image: "/projects/Moodsic.png",
+    languages: ["Python", "Django", "Typescript", "React", "OpenCV"],
     details: [
       "Supports multiple hashing algorithms: XxHash, Blake3, and Sha256 for different scan modes",
       "Filter files by extension and size with recursive directory scanning",
@@ -49,17 +60,16 @@ const projects: Project[] = [
   },
   {
     title: "ImgCap - Automatic Image Captioning",
-    repoUrl: "https://youtu.be/DGRLND8I02g?si=5957pycpotNDa542",
-    description: "A machine learning based collision avoidance simulation for satellites in low earth orbit.",
-    logo: <FaClosedCaptioning className="text-cyan-600" />,
-    image: "/projects/deduck.png",
-    languages: ["Python", "CNN"],
+    repoUrl: "https://github.com/dylandhw/imgcap",
+    description: "A PyTorch-based image captioning model using CNN encoder and LSTM decoder architecture trained on the Flickr8K dataset to generate natural language descriptions of images.",
+    image: "",
+    languages: ["Python", "PyTorch"],
     details: [
-      "Supports multiple hashing algorithms: XxHash, Blake3, and Sha256 for different scan modes",
-      "Filter files by extension and size with recursive directory scanning",
-      "Quarantine duplicates safely with restoration capabilities",
-      "Generate detailed reports showing files found, deleted, and total bytes saved",
-      "Built with Rust for high performance and memory safety"
+      "Implements an EncoderCNN class using pre-trained Inception v3 to extract visual features from input images and map them to embedding space.",
+      "Features a DecoderRNN class with LSTM layers that processes image features and generates sequential word predictions for caption generation.",
+      "Combines encoder and decoder in a unified pipeline (crpipe) class that handles end-to-end training and inference for image-to-text translation.",
+      "Includes training infrastructure with configurable hyperparameters, checkpoint saving/loading, and TensorBoard integration for monitoring training progress.",
+      "Provides caption generation functionality with beam search capabilities and vocabulary mapping to convert token predictions back to readable text."
     ]
   },
 ];
@@ -86,7 +96,7 @@ export default function WorkPage() {
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-800"
                 >
-                  GitHub repo
+                  Check it out
                 </Link>
               )}
               {project.liveUrl && (

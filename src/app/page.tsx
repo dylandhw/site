@@ -22,7 +22,7 @@ export default function Home() {
       <h1 className="text-3xl mb-6">Dylan Wilkins</h1>
       <br />
       <p>
-      Humanitatem promovemus technologiā. We advance humanity through technology.
+        Humanitatem promovemus technologiā. We advance humanity through technology.
       </p>
       <br />
       <p>
@@ -30,15 +30,15 @@ export default function Home() {
       </p>
 
       <div className="flex flex-wrap gap-4 my-6">
-        <a href="https://github.com/Yuvraj-cyborg" className="inline-flex items-center px-4 py-1 border rounded hover:bg-gray-50 text-sm gap-2">
+        <a href="https://github.com/dylandhw" className="inline-flex items-center px-4 py-1 border rounded hover:bg-gray-50 text-sm gap-2">
           <Github size={16} />
           Github
         </a>
-        <a href="/resume-new.pdf" className="inline-flex items-center px-4 py-1 border rounded hover:bg-gray-50 text-sm gap-2">
+        <a href="/dylan_wilkins_resume.pdf" className="inline-flex items-center px-4 py-1 border rounded hover:bg-gray-50 text-sm gap-2">
           <NotebookText size={16} />
           Resume
         </a>
-        <a href="https://www.buymeacoffee.com/yuvrajbiswg" className="inline-flex items-center px-4 py-1 border rounded hover:bg-gray-50 text-sm gap-2">
+        <a href="https://linkedin.com/in/dylwilks" className="inline-flex items-center px-4 py-1 border rounded hover:bg-gray-50 text-sm gap-2">
           <Coffee size={16} />
           LinkedIn
         </a>
@@ -48,27 +48,24 @@ export default function Home() {
       <div className="space-y-4">
         <article className="space-y-2 flex flex-row gap-4">
           <h3 className="text-md font-normal hover:text-gray-600">
-            <Link href="/blog/go-blog">
+            <Link href="/blog/rusty-blog">
               The Beauty of Go: Parallelism and Concurrency
             </Link>
           </h3>
-          <time className="text-sm text-gray-500">December 28 2024</time>
         </article>
         <article className="space-y-2 flex flex-row gap-4">
           <h3 className="text-md font-normal hover:text-gray-600">
-            <Link href="/blog/whiteboard-blog">
-              Whiteboard Woes: Thoughts on Code Examinations
+            <Link href="/blog/machine-learning-fundamentals">
+              Machine Learning Fundamentals: From Theory to Practice
             </Link>
           </h3>
-          <time className="text-sm text-gray-500">July 12 2025</time>
         </article>
         <article className="space-y-2 flex flex-row gap-4">
           <h3 className="text-md font-normal hover:text-gray-600">
-            <Link href="/blog/whiteboard-blog">
-              Stacking Your Stack: Is Too Much Good, Bad?
+            <Link href="/blog/blockchain-deep-dive">
+              Ledgers to Smart Contracts: What is the Blockchain?
             </Link>
           </h3>
-          <time className="text-sm text-gray-500">August 01 2025</time>
         </article>
       </div>
     </>
