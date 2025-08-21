@@ -95,7 +95,6 @@ export default function WorkPage() {
         {projects.map((project, index) => (
           <div key={index} className="space-y-4">
             <h2 className="text-lg flex items-center gap-3">
-              <span className="text-xl">{project.logo}</span>
               {project.title}
             </h2>
             <p className="text-sm text-gray-500">{project.languages.join(", ")}</p>
