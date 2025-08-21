@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaSatellite, FaClosedCaptioning, FaSmile } from 'react-icons/fa';
 
 interface Project {
   title: string;
