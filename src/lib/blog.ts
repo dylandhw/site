@@ -37,17 +37,14 @@ export function getAllPosts() {
 export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
   try {
     // Try to find the file with either .md or .mdx extension
-    let fullPath: string
     let fileContents: string
     
     const mdPath = path.join(postsDirectory, `${slug}.md`)
     const mdxPath = path.join(postsDirectory, `${slug}.mdx`)
     
     if (fs.existsSync(mdPath)) {
-      fullPath = mdPath
       fileContents = fs.readFileSync(mdPath, 'utf8')
     } else if (fs.existsSync(mdxPath)) {
-      fullPath = mdxPath
       fileContents = fs.readFileSync(mdxPath, 'utf8')
     } else {
       return null
