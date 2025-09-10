@@ -17,7 +17,7 @@ export default function About() {
           <h2 className="text-xl mt-8 mb-4">Experience</h2>
           <div className="mb-6">
           <h3 className="font-medium">
-  <a className="text-blue-500" href="https://draco.ucf.edu" target="_blank" rel="noopener noreferrer">DRACO</a> - Undergraduate Computer Engineering Researcher
+  <a className="text-blue-500" href="https://draco.ucf.edu" target="_blank" rel="noopener noreferrer">DRACO</a> - Software Engineering Research Intern
 </h3>            <p className="text-gray-500 text-xs">March 2025 - Present</p>
             <p className="mt-1">
               At the DRACO Lab, I contributed to advancing next-generation satellite intelligence by prototyping computer vision algorithms in Python for real-time flood detection, optimized to run on memristor-based systems for low-latency performance. I engineered and evaluated image-processing pipelines under diverse environmental conditions, producing benchmarks that informed the design of onboard AI for satellite deployment.
