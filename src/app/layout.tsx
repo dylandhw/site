@@ -13,7 +13,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: 'Dylan Wilkins',
-  description: 'SWE & CS Student',
+  description: 'software engineer, student, forever learning.',
   icons: {
     icon: '/favicon.png',
   },

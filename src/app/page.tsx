@@ -36,22 +36,22 @@ export default function Home() {
       <div className="space-y-4">
         <article className="space-y-2 flex flex-row gap-4">
           <h3 className="text-md font-normal hover:text-gray-600">
-            <Link href="/blog/rusty-blog">
-              The Beauty of Go: Parallelism and Concurrency
+            <Link href="/blog/amelie">
+              Amélie: Kindness Despite Cynicism
             </Link>
           </h3>
         </article>
         <article className="space-y-2 flex flex-row gap-4">
           <h3 className="text-md font-normal hover:text-gray-600">
-            <Link href="/blog/machine-learning-fundamentals">
-              Machine Learning Fundamentals: From Theory to Practice
+            <Link href="/blog/aco">
+              My Favorite Algorithm: ACO
             </Link>
           </h3>
         </article>
         <article className="space-y-2 flex flex-row gap-4">
           <h3 className="text-md font-normal hover:text-gray-600">
-            <Link href="/blog/blockchain-deep-dive">
-              Ledgers to Smart Contracts: What is the Blockchain?
+            <Link href="/blog/verbosity">
+              On Verbosity in Research (and Software)
             </Link>
           </h3>
         </article>
