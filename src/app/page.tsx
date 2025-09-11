@@ -55,6 +55,13 @@ export default function Home() {
             </Link>
           </h3>
         </article>
+        <article className="space-y-2 flex flex-row gap-4">
+          <h3 className="text-md font-normal hover:text-gray-600">
+            <Link href="/blog/collections-photos">
+              Collections: Photos
+            </Link>
+          </h3>
+        </article>
       </div>
     </>
   )
