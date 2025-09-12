@@ -32,7 +32,7 @@ const projects: Project[] = [
     repoUrl: "https://github.com/dylandhw/certification-blockchain",
     description: "A tamper-proof blockchain system built in Go for recording and verifying event attendance certifications with cryptographic integrity and web interface.",
     image: "",
-    languages: ["Golang", "Rust", "PostgreSQL, React"],
+    languages: ["Golang", "Rust", "PostgreSQL", "React"],
     details: [
       "Implements a complete blockchain with SHA-256 hashing, block validation, and cryptographic chain linking to ensure data immutability.",
       "Features a web-based submission system with HTML forms for attendees to register their event participation through a Go HTTP server.",
