@@ -11,7 +11,7 @@ interface Project {
   details: string[];
   image?: string;
 }
-
+// className="text-blue-600 hover:text-blue-800"
 const projects: Project[] = [
   {
     title: "OrbitAI - Satellite Collision Avoidance Simulation",
@@ -93,11 +93,17 @@ export default function WorkPage() {
       
       <div className="space-y-12">
         {projects.map((project, index) => (
-          <div key={index} className="space-y-4">
-            <h2 className="text-lg flex items-center gap-3">
+          <div key={index} className="space-y-4 p-6 border border-gray-200 rounded-xl bg-white/60 hover:bg-white shadow-sm hover:shadow-md transition">
+            <h2 className="text-xl font-semibold tracking-tight text-gray-900 flex items-center gap-3">
               {project.title}
             </h2>
-            <p className="text-sm text-gray-500">{project.languages.join(", ")}</p>
+            <div className="flex flex-wrap gap-2">
+              {project.languages.map((lang, i) => (
+                <span key={i} className="px-2 py-0.5 text-xs rounded-full bg-gray-100 text-gray-700 border border-gray-200">
+                  {lang}
+                </span>
+              ))}
+            </div>
             <div className="flex gap-4">
               {project.repoUrl && (
                 <Link 
@@ -138,8 +144,10 @@ export default function WorkPage() {
               </div>
             )}
             
-            <p className="text-lg">{project.description}</p>
+            <p className="text-base text-gray-700">{project.description}</p>
             
+            <hr className="my-2 border-gray-100" />
+
             <ul className="list-disc pl-6 space-y-2 text-sm">
               {project.details.map((detail, idx) => (
                 <li key={idx}>{detail}</li>
