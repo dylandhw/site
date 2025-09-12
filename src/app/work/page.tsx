@@ -16,23 +16,38 @@ const projects: Project[] = [
   {
     title: "OrbitAI - Satellite Collision Avoidance Simulation",
     repoUrl: "https://youtu.be/DGRLND8I02g?si=5957pycpotNDa542",
-    description: "An AI-powered satellite traffic management system using hybrid neural networks to predict and prevent collisions in increasingly crowded low Earth orbit.",
+    description: "An AI-powered satellite traffic management system using hybrid neural networks to predict and prevent collisions in increasingly crowded low Earth orbit.", 
+
     image: "/projects/OrbitAI.png",
-    languages: ["Python", "C#", "Three.js", "PyTorch", "Unity",],
+    languages: ["Python", "C#", "Three.js", "PyTorch", "Flask", "ONNX", "AWS EC2", "Unity"],
     details: [
       "Implements a Gated Recurrent Network (GRU) to predict real-time satellite position trajectories over 180-step sequences using synthetic LEO satellite data.",
       "Utilizes Graph Neural Networks (GNN) to coordinate satellites as dynamic nodes and predict high-risk interactions between spacecraft in orbital space.",
       "Features a Unity-based 3D orbital simulator that visualizes collision scenarios and avoidance maneuvers with live AI predictions and trajectory modeling.",
       "Deploys the machine learning model on AWS EC2 with Flask server and WebSocket communication for real-time inference between simulation and AI backend.",
-      "Addresses the critical problem of space debris collision avoidance as satellite populations are projected to exceed 100,000 active satellites in LEO by 2030."
+      "Addresses the critical problem of space debris collision avoidance as satellite populations are projected to exceed 100,000 active satellites in LEO by 2030.",
+      "My favorite project so far :-)",
+
     ]
   },
   {
-    title: "Certification Blockchain System",
+    title: "Mosaic -- In progress...",
+    repoUrl: "github.com/",
+    description: "A distributed multilingual NLP pipeline for real-time global sentiment tracking.",
+    image: "",
+    languages: ["Python", "PyTorch", "Node.js", "PostgreSQL", "Docker", "Kubernetes", "D3.js"],
+    details: [
+      "Built a distributed multilingual NLP pipeline that ingested and processed 50k+ daily news headlines across English, Spanish, and Chinese via Kafka streaming, enabling real-time global sentiment tracking.",
+      "Applied transformer-based sentiment models, FinBERT + XLM-RoBERTa, fine-tuned on financial text, achieving a 20% higher correlation with short term equity moves.",
+      "Developed lag-correlation analytics and interactive dashboards in D3.js to visualize sentiment-market dynamics, providing insights into news-driven shifts within 15 minutes of release."
+    ]
+  },
+  {
+    title: "Certis",
     repoUrl: "https://github.com/dylandhw/certification-blockchain",
     description: "A tamper-proof blockchain system built in Go for recording and verifying event attendance certifications with cryptographic integrity and web interface.",
     image: "",
-    languages: ["Golang", "Rust", "PostgreSQL", "React"],
+    languages: ["Golang", "Rust", "PostgreSQL", "React", "Docker"],
     details: [
       "Implements a complete blockchain with SHA-256 hashing, block validation, and cryptographic chain linking to ensure data immutability.",
       "Features a web-based submission system with HTML forms for attendees to register their event participation through a Go HTTP server.",
@@ -44,7 +59,7 @@ const projects: Project[] = [
   {
     title: "MOODSIC - Emotion Detecting Music Player",
     repoUrl: "https://devpost.com/software/moodsic-pjdgzm",
-    description: "detects a user's emotional state through facial expression analysis using a webcam and recommends a song that matches or elevates their mood by integrating with Spotify's API.",
+    description: "Detects a user's emotional state through facial expression analysis using a webcam and recommends a song that matches or elevates their mood by integrating with Spotify's API.",
     image: "/projects/Moodsic.png",
     languages: ["Python", "Django", "Typescript", "React", "OpenCV"],
     details: [
@@ -56,7 +71,7 @@ const projects: Project[] = [
     ]
   },
 {
-  "title": "GitHub Issues CLI",
+  "title": "Git Issues Tool",
   "repoUrl": "https://github.com/dylandhw/issues",
   "description": "A command-line tool for listing, creating, and managing GitHub issues directly from the terminal.",
   "image": "",
