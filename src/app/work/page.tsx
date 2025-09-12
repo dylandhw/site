@@ -14,7 +14,7 @@ interface Project {
 // className="text-blue-600 hover:text-blue-800"
 const projects: Project[] = [
   {
-    title: "OrbitAI - Satellite Collision Avoidance Simulation",
+    title: "OrbitAI",
     repoUrl: "https://youtu.be/DGRLND8I02g?si=5957pycpotNDa542",
     description: "An AI-powered satellite traffic management system using hybrid neural networks to predict and prevent collisions in increasingly crowded low Earth orbit.", 
 
@@ -57,7 +57,7 @@ const projects: Project[] = [
     ]
   },
   {
-    title: "MOODSIC - Emotion Detecting Music Player",
+    title: "MOODSIC",
     repoUrl: "https://devpost.com/software/moodsic-pjdgzm",
     description: "Detects a user's emotional state through facial expression analysis using a webcam and recommends a song that matches or elevates their mood by integrating with Spotify's API.",
     image: "/projects/Moodsic.png",
@@ -71,7 +71,7 @@ const projects: Project[] = [
     ]
   },
 {
-  "title": "Git Issues Tool",
+  "title": "Gitissues",
   "repoUrl": "https://github.com/dylandhw/issues",
   "description": "A command-line tool for listing, creating, and managing GitHub issues directly from the terminal.",
   "image": "",
@@ -85,7 +85,7 @@ const projects: Project[] = [
   ]
 },
   {
-    title: "ImgCap - Automatic Image Captioning",
+    title: "ImgCap",
     repoUrl: "https://github.com/dylandhw/imgcap",
     description: "A PyTorch-based image captioning model using CNN encoder and LSTM decoder architecture trained on the Flickr8K dataset to generate natural language descriptions of images.",
     image: "",
