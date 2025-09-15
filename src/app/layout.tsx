@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: 'Dylan Wilkins',
   description: 'software engineer, student, forever learning.',
   icons: {
-    icon: '/favicon.png',
+    icon: '/dogwoof.jpg',
   },
 }
 
