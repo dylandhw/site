@@ -15,7 +15,7 @@ const whaleFrames = Array.from(
 function WhaleAnimation() {
   const [frame, setFrame] = useState(0);
   const [xPos, setXPos] = useState(0);
-  const [direction, setDirection] = useState(1);
+  const [direction] = useState(1);
 
   useEffect(() => {
     const interval = setInterval(() => {
