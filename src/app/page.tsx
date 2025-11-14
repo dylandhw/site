@@ -20,21 +20,7 @@ export default function Home() {
       <h3 className="text-2xl mb-6">About Me :-)</h3>
       <p>
         I&apos;m a student and software engineer at the University of Central
-        Florida, majoring in Computer Science and minoring in Statistics. My
-        completed and current coursework includes:{" "}
-        <a
-          className="text-gray-500"
-          href="https://catalog.ucf.edu/courses/computer-science/computer-science-bs/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <br></br>- Data Structures, Algorithms, Computer Logic & Architecture
-          <br></br>- Systems Software, Security in Computing, Algo. for Machine
-          Learning
-          <br></br>- Computer Graphics, Mobile Software Development
-          <br></br>- Discrete Structures, Advanced Statistics, and Advanced
-          Calculus.
-        </a>
+        Florida, majoring in Computer Science and minoring in Statistics.
       </p>
       <p>
         My passions lie in machine learning, computer vision, distributed
