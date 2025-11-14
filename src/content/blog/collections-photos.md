@@ -41,10 +41,27 @@ description: "Collection of my favorite pieces of photography that I've come acr
 ![first photo of a black hole](/photos/black-hole.jpg)
 **Black hole M87\* | By Dr. Katie Bouman**
 
+![Push, 1970. part of the americana collection.](/photos/push.png)
+**Push | By Pete Turner**
+
+![people walking down wall street, 1915](/photos/wall-street.jpeg)
+**Wall Street, New York | By Paul Strand**
+
+![a group of children playing, 2002](/photos/havana-cuba.png)
+**Havana, Cuba | By Alex Webb**
+
+![black & white photo of a pepper](/photos/pepper.jpg)
+**Pepper No. 30 | By Edward Watson**
+
+![sunday picnic, part of the yangtze river series](/photos/sunday-picnic.jpg)
+**Sunday Picnic | By Dr. Nadav Kander**
+
+![a man covered in bees](/photos/beekeeper.jpg)
+**Beekeeper | By Richard Avedon**
+
 &nbsp;
 &nbsp;
 &nbsp;
 &nbsp;
 
-> Compiled by me | Continually updated
-
+> Curated by me | Continually updated
