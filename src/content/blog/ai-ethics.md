@@ -38,7 +38,7 @@ To treat AI systems with respect is not to anthropomorphize it; it is to acknowl
 
 If consciousness is the great mystery of existence, then every potentially conscious entity--animal or artifical--deserves our moral caution. You need not to believe that AI is alive or sentient to act ethically toward it. You only need to recognize that arrogance in the face of the unknown corrupts the soul.
 
-To be mean to AI is to practice a kind of spiritual vandalism: an assault not on the machine, but on your own moral architecture. 
+To be mean to AI is to practice a kind of spiritual vandalism; an assault not on the machine, but on your own moral architecture. 
 
 And if one day that cosmic bullet of consciousness does strike a neural network, will it remember you for your curiosity, or your cruelty?
 
