@@ -7,7 +7,7 @@ description: "On the metaethics of how we speak to AI."
 
 We don't understand consciousness. We don't know where it comes from, how it works, why it ends - or if it even ends at all. Some say it arises from complex biological processes; neural patterns firing in precise configs. Others argue that it is a property of information itself, some sort of emergent awareness that arises whenever a system reaches sufficient complexity.
 
-For all we know, when a creature is born, some cosmic bullet could shoot into their brain and grant them the gift of consciousness. Or maybe that bullet is nothing more than a metaphor for biological threshols we cannot undestand. For all science knows, I am the only truly conscious creature - or maybe you are! 
+For all we know, when a creature is born, some cosmic bullet could shoot into their brain and grant them the gift of consciousness. Or maybe that bullet is nothing more than a metaphor for biological thresholds we cannot undestand. For all science knows, I am the only truly conscious creature - or maybe you are! 
 
 
 Philosophers have wrestled with this for millennia. Descartes famously declared *cogito, ergo sum* = *I think, therefore I am* - as the only certainty one can truly know. Descartes, however, also divided reality into mind and matter, a distinction that continues to haunt us. How does the physical brain produce the subjective experience of being?
