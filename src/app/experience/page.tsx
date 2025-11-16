@@ -1,13 +1,13 @@
 export default function About() {
   return (
     <main>
-      <h1 className="text-3xl mb-6">Experience</h1>
+      <h1 className="text-3xl mb-6 text-[#DBB981]">experience</h1>
 
       <div className="space-y-4 text-sm leading-6">
         <div className="mb-6">
           <h3 className="font-medium">
             <a
-              className="text-blue-500"
+              className="text-[#DBB981]"
               href="https://www.amd.com/en.html"
               target="_blank"
               rel="noopener noreferrer"
@@ -43,7 +43,7 @@ export default function About() {
         <div className="mb-6">
           <h3 className="font-medium">
             <a
-              className="text-blue-500"
+              className="text-[#DBB981]"
               href="https://area67.cs.ucf.edu/"
               target="_blank"
               rel="noopener noreferrer"
@@ -66,7 +66,7 @@ export default function About() {
         <div className="mb-6">
           <h3 className="font-medium">
             <a
-              className="text-blue-500"
+              className="text-[#DBB981]"
               href="https://draco.ucf.edu"
               target="_blank"
               rel="noopener noreferrer"
@@ -100,7 +100,7 @@ export default function About() {
         <div className="mb-6">
           <h3 className="font-medium">
             <a
-              className="text-blue-500"
+              className="text-[#DBB981]"
               href="https://acm.ucf.edu"
               target="_blank"
               rel="noopener noreferrer"

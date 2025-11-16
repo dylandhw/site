@@ -55,8 +55,8 @@ function WhaleAnimation() {
 export default function Home() {
   return (
     <>
-      <h1 className="text-3xl mb-6 flex items-center gap-4">
-        Dylan Wilkins
+      <h1 className="text-3xl mb-6 flex items-center gap-4 text-[#DBB981]">
+        >> dylan wilkins
         <WhaleAnimation />
       </h1>
 
@@ -69,15 +69,17 @@ export default function Home() {
         &apos;unsolvable&apos; problems.
       </p>
 
-      <h3 className="text-2xl mb-6">About Me :-)</h3>
+      <h3 className="text-2xl mb-6 text-[#DBB981]">
+        >> who am I?
+      </h3>
       <p>
         I&apos;m a student and software engineer at the University of Central
-        Florida, majoring in Computer Science and minoring in Statistics.
+        Florida, studying computer science and statistics.
       </p>
       <p>
-        My passions lie in machine learning, computer vision, distributed
+        My passions lie in computer vision, distributed
         systems architecture, novel hardware, and advanced algorithm
-        development. [in no particular order].
+        development [in no particular order].
       </p>
       <p>
         Outside of technology, I enjoy foreign films (huge fan of french new
@@ -85,7 +87,9 @@ export default function Home() {
         architecture :D.
       </p>
 
-      <h3 className="text-2xl mb-6">Featured Posts</h3>
+      <h3 className="text-2xl mb-6 text-[#DBB981]">
+        >> featured writings.
+      </h3>
       <div className="space-y-4">
         <article className="space-y-2 flex flex-row gap-4">
           <h3 className="text-md font-normal hover:text-gray-600">
@@ -118,21 +122,22 @@ export default function Home() {
           className="inline-flex items-center px-4 py-1 border rounded hover:bg-gray-50 text-sm gap-2"
         >
           <Github size={16} />
-          Github
+          github
+        </a>
+
+        <a
+          href="https://linkedin.com/in/dylwilks"
+          className="inline-flex items-center px-4 py-1 border rounded hover:bg-gray-50 text-sm gap-2"
+        >
+          <Linkedin size={16} />
+          linkedin
         </a>
         <a
           href="/MAIN_RESUME.pdf"
           className="inline-flex items-center px-4 py-1 border rounded hover:bg-gray-50 text-sm gap-2"
         >
           <NotebookText size={16} />
-          Resume
-        </a>
-        <a
-          href="https://linkedin.com/in/dylwilks"
-          className="inline-flex items-center px-4 py-1 border rounded hover:bg-gray-50 text-sm gap-2"
-        >
-          <Linkedin size={16} />
-          LinkedIn
+          resume
         </a>
       </div>
     </>

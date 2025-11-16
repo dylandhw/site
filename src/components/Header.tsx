@@ -6,10 +6,10 @@ export default function Header() {
   const pathname = usePathname();
 
   const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/experience", label: "Experience" },
-    { href: "/blog", label: "Blog" },
-    { href: "/work", label: "Projects" },
+    { href: "/", label: "home" },
+    { href: "/experience", label: "experience" },
+    { href: "/work", label: "projects" },
+    { href: "/blog", label: "blog" },
   ];
 
   return (
@@ -26,7 +26,7 @@ export default function Header() {
               href={item.href}
               className={`transition-colors duration-200 ${
                 isActive
-                  ? "text-blue-600 font-medium"
+                  ? "text-[#DBB981] font-medium"
                   : "hover:text-grey-600 hover:font-medium"
               }`}
             >

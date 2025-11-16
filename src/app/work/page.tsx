@@ -1,6 +1,6 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 interface Project {
   title: string;
@@ -11,15 +11,25 @@ interface Project {
   details: string[];
   image?: string;
 }
-// className="text-blue-600 hover:text-blue-800"
+
 const projects: Project[] = [
   {
     title: "OrbitAI",
     repoUrl: "https://youtu.be/DGRLND8I02g?si=5957pycpotNDa542",
-    description: "An AI-powered satellite traffic management system using hybrid neural networks to predict and prevent collisions in increasingly crowded low Earth orbit.", 
+    description:
+      "An AI-powered satellite traffic management system using hybrid neural networks to predict and prevent collisions in increasingly crowded low Earth orbit.",
 
     image: "/projects/OrbitAI.png",
-    languages: ["Python", "C#", "Three.js", "PyTorch", "Flask", "ONNX", "AWS EC2", "Unity"],
+    languages: [
+      "Python",
+      "C#",
+      "Three.js",
+      "PyTorch",
+      "Flask",
+      "ONNX",
+      "AWS EC2",
+      "Unity",
+    ],
     details: [
       "Implements a Gated Recurrent Network (GRU) to predict real-time satellite position trajectories over 180-step sequences using synthetic LEO satellite data.",
       "Utilizes Graph Neural Networks (GNN) to coordinate satellites as dynamic nodes and predict high-risk interactions between spacecraft in orbital space.",
@@ -27,25 +37,34 @@ const projects: Project[] = [
       "Deploys the machine learning model on AWS EC2 with Flask server and WebSocket communication for real-time inference between simulation and AI backend.",
       "Addresses the critical problem of space debris collision avoidance as satellite populations are projected to exceed 100,000 active satellites in LEO by 2030.",
       "My favorite project so far :-)",
-
-    ]
+    ],
   },
   {
     title: "Mosaic -- In progress...",
     repoUrl: "github.com/",
-    description: "A distributed multilingual NLP pipeline for real-time global sentiment tracking.",
+    description:
+      "A distributed multilingual NLP pipeline for real-time global sentiment tracking.",
     image: "",
-    languages: ["Python", "PyTorch", "Node.js", "PostgreSQL", "Docker", "Kubernetes", "D3.js"],
+    languages: [
+      "Python",
+      "PyTorch",
+      "Node.js",
+      "PostgreSQL",
+      "Docker",
+      "Kubernetes",
+      "D3.js",
+    ],
     details: [
       "Built a distributed multilingual NLP pipeline that ingested and processed 50k+ daily news headlines across English, Spanish, and Chinese via Kafka streaming, enabling real-time global sentiment tracking.",
       "Applied transformer-based sentiment models, FinBERT + XLM-RoBERTa, fine-tuned on financial text, achieving a 20% higher correlation with short term equity moves.",
-      "Developed lag-correlation analytics and interactive dashboards in D3.js to visualize sentiment-market dynamics, providing insights into news-driven shifts within 15 minutes of release."
-    ]
+      "Developed lag-correlation analytics and interactive dashboards in D3.js to visualize sentiment-market dynamics, providing insights into news-driven shifts within 15 minutes of release.",
+    ],
   },
   {
     title: "Certis",
     repoUrl: "https://github.com/dylandhw/certification-blockchain",
-    description: "A tamper-proof blockchain system built in Go for recording and verifying event attendance certifications with cryptographic integrity and web interface.",
+    description:
+      "A tamper-proof blockchain system built in Go for recording and verifying event attendance certifications with cryptographic integrity and web interface.",
     image: "",
     languages: ["Golang", "Rust", "PostgreSQL", "React", "Docker"],
     details: [
@@ -53,13 +72,14 @@ const projects: Project[] = [
       "Features a web-based submission system with HTML forms for attendees to register their event participation through a Go HTTP server.",
       "Includes persistent JSON storage with automatic blockchain state saving and loading between application restarts.",
       "Provides QR code generation functionality to create quick links for easy access to the certification submission forms.",
-      "Designed with extensible architecture supporting planned features like PostgreSQL integration, Rust validation engine, and React frontend"
-    ]
+      "Designed with extensible architecture supporting planned features like PostgreSQL integration, Rust validation engine, and React frontend",
+    ],
   },
   {
     title: "MOODSIC",
     repoUrl: "https://devpost.com/software/moodsic-pjdgzm",
-    description: "Detects a user's emotional state through facial expression analysis using a webcam and recommends a song that matches or elevates their mood by integrating with Spotify's API.",
+    description:
+      "Detects a user's emotional state through facial expression analysis using a webcam and recommends a song that matches or elevates their mood by integrating with Spotify's API.",
     image: "/projects/Moodsic.png",
     languages: ["Python", "Django", "Typescript", "React", "OpenCV"],
     details: [
@@ -67,27 +87,29 @@ const projects: Project[] = [
       "Backend built with Flask (Python) to handle routing, process emotion data, and interact with Spotify’s API.",
       "Emotion detection implemented using OpenCV and a deep learning-based facial emotion recognition model.",
       "Spotify Web API used for authenticating, accessing playlists, and retrieving track details based on mood and genre.",
-      "Challenges included emotion detection accuracy, managing Spotify API limitations, ensuring real-time performance, and achieving cross-browser compatibility."
-    ]
+      "Challenges included emotion detection accuracy, managing Spotify API limitations, ensuring real-time performance, and achieving cross-browser compatibility.",
+    ],
   },
-{
-  "title": "Gitissues",
-  "repoUrl": "https://github.com/dylandhw/issues",
-  "description": "A command-line tool for listing, creating, and managing GitHub issues directly from the terminal.",
-  "image": "",
-  "languages": ["Rust"],
-  "details": [
-    "Fetches and displays a list of issues from a GitHub repository.",
-    "Supports filtering issues by status, labels, or assignee.",
-    "Allows creating new issues without visiting GitHub web interface.",
-    "Provides summary statistics like open vs closed issues and issue count per label.",
-    "Designed as a lightweight CLI tool to streamline issue management for developers."
-  ]
-},
+  {
+    title: "Gitissues",
+    repoUrl: "https://github.com/dylandhw/issues",
+    description:
+      "A command-line tool for listing, creating, and managing GitHub issues directly from the terminal.",
+    image: "",
+    languages: ["Rust"],
+    details: [
+      "Fetches and displays a list of issues from a GitHub repository.",
+      "Supports filtering issues by status, labels, or assignee.",
+      "Allows creating new issues without visiting GitHub web interface.",
+      "Provides summary statistics like open vs closed issues and issue count per label.",
+      "Designed as a lightweight CLI tool to streamline issue management for developers.",
+    ],
+  },
   {
     title: "ImgCap",
     repoUrl: "https://github.com/dylandhw/imgcap",
-    description: "A PyTorch-based image captioning model using CNN encoder and LSTM decoder architecture trained on the Flickr8K dataset to generate natural language descriptions of images.",
+    description:
+      "A PyTorch-based image captioning model using CNN encoder and LSTM decoder architecture trained on the Flickr8K dataset to generate natural language descriptions of images.",
     image: "",
     languages: ["Python", "PyTorch"],
     details: [
@@ -95,46 +117,51 @@ const projects: Project[] = [
       "Features a DecoderRNN class with LSTM layers that processes image features and generates sequential word predictions for caption generation.",
       "Combines encoder and decoder in a unified pipeline (crpipe) class that handles end-to-end training and inference for image-to-text translation.",
       "Includes training infrastructure with configurable hyperparameters, checkpoint saving/loading, and TensorBoard integration for monitoring training progress.",
-      "Provides caption generation functionality with beam search capabilities and vocabulary mapping to convert token predictions back to readable text."
-    ]
+      "Provides caption generation functionality with beam search capabilities and vocabulary mapping to convert token predictions back to readable text.",
+    ],
   },
 ];
 
-
 export default function WorkPage() {
   return (
-    <div className="space-y-10 py-4">
-      <h1 className="text-3xl mb-6">Projects</h1>
-      
+    <div className="">
+      <h1 className="text-3xl mb-6 text-[#DBB981]">projects</h1>
+
       <div className="space-y-12">
         {projects.map((project, index) => (
-          <div key={index} className="space-y-4 p-6 border border-gray-200 rounded-xl bg-white/60 hover:bg-white shadow-sm hover:shadow-md transition">
-            <h2 className="text-xl font-semibold tracking-tight text-gray-900 flex items-center gap-3">
+          <div
+            key={index}
+            className="space-y-4 p-6 border text-[#090601] rounded-xl text-[#ffffff] shadow-sm hover:shadow-md transition"
+          >
+            <h2 className="text-xl font-semibold tracking-tight text-white flex items-center gap-3">
               {project.title}
             </h2>
             <div className="flex flex-wrap gap-2">
               {project.languages.map((lang, i) => (
-                <span key={i} className="px-2 py-0.5 text-xs rounded-full bg-gray-100 text-gray-700 border border-gray-200">
+                <span
+                  key={i}
+                  className="px-2 py-0.5 text-xs rounded-full bg-gray-100 text-[#090601] border border-gray-200"
+                >
                   {lang}
                 </span>
               ))}
             </div>
             <div className="flex gap-4">
               {project.repoUrl && (
-                <Link 
+                <Link
                   href={project.repoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800"
+                  className="text-[#DBB981] hover:text-[#9c7d4b]"
                 >
-                  Check it out
+                  check it out
                 </Link>
               )}
               {project.liveUrl && (
                 <Link
                   href={project.liveUrl}
                   target="_blank"
-                  rel="noopener noreferrer" 
+                  rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-800"
                 >
                   Live Site
@@ -158,9 +185,9 @@ export default function WorkPage() {
                 />
               </div>
             )}
-            
-            <p className="text-base text-gray-700">{project.description}</p>
-            
+
+            <p className="text-base text-white">{project.description}</p>
+
             <hr className="my-2 border-gray-100" />
 
             <ul className="list-disc pl-6 space-y-2 text-sm">
