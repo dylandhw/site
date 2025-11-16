@@ -6,6 +6,12 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
+      <h1
+        className="text-3xl mb-6"
+        style={{ color: "var(--heading-light-blue)" }}
+      >
+        Dylan Wilkins
+      </h1>
       <p>
         Humanitatem promovemus technologiā. We advance humanity through
         technology.
@@ -15,7 +21,12 @@ export default function Home() {
         &apos;unsolvable&apos; problems.
       </p>
 
-      <h3 className="text-2xl mb-6 text-[#DBB981]">&gt;&gt; who am I?</h3>
+      <h3
+        className="text-2xl mb-6"
+        style={{ color: "var(--heading-light-blue)" }}
+      >
+        &gt;&gt; who am I?
+      </h3>
       <p>
         I&apos;m a student and software engineer at the University of Central
         Florida, studying computer science and statistics.
@@ -30,8 +41,10 @@ export default function Home() {
         wave!), digging myself down wikipedia rabbit holes, logic puzzles, and
         architecture :D.
       </p>
-
-      <h3 className="text-2xl mb-6 text-[#DBB981]">
+      <h3
+        className="text-2xl mb-6"
+        style={{ color: "var(--heading-light-blue)" }}
+      >
         &gt;&gt; featured writings.
       </h3>
       <div className="space-y-4">

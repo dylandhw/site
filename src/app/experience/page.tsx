@@ -1,13 +1,19 @@
 export default function About() {
   return (
     <main>
-      <h1 className="text-3xl mb-6 text-[#DBB981]">experience</h1>
+      <h1
+        className="text-3xl mb-6"
+        style={{ color: "var(--heading-light-blue)" }}
+      >
+        experience
+      </h1>
 
       <div className="space-y-4 text-sm leading-6">
         <div className="mb-6">
           <h3 className="font-medium">
             <a
-              className="text-[#DBB981]"
+              className=""
+              style={{ color: "var(--heading-light-blue)" }}
               href="https://www.amd.com/en.html"
               target="_blank"
               rel="noopener noreferrer"
@@ -43,7 +49,8 @@ export default function About() {
         <div className="mb-6">
           <h3 className="font-medium">
             <a
-              className="text-[#DBB981]"
+              className=""
+              style={{ color: "var(--heading-light-blue)" }}
               href="https://area67.cs.ucf.edu/"
               target="_blank"
               rel="noopener noreferrer"
@@ -66,7 +73,8 @@ export default function About() {
         <div className="mb-6">
           <h3 className="font-medium">
             <a
-              className="text-[#DBB981]"
+              className=""
+              style={{ color: "var(--heading-light-blue)" }}
               href="https://draco.ucf.edu"
               target="_blank"
               rel="noopener noreferrer"
@@ -100,7 +108,8 @@ export default function About() {
         <div className="mb-6">
           <h3 className="font-medium">
             <a
-              className="text-[#DBB981]"
+              className=""
+              style={{ color: "var(--heading-light-blue)" }}
               href="https://acm.ucf.edu"
               target="_blank"
               rel="noopener noreferrer"

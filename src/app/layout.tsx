@@ -30,7 +30,7 @@ export default function RootLayout({
         className={`${ibmPlexMono.className} container mx-auto px-4 max-w-2xl pt-16`}
       >
         <div className="w-full flex justify-center mb-8">
-          <div className="shadow-md rounded-lg ">
+          <div className="rounded-lg ">
             <Header />
           </div>
         </div>

@@ -26,7 +26,7 @@ export default function Header() {
               href={item.href}
               className={`transition-colors duration-200 ${
                 isActive
-                  ? "text-[#DBB981] font-medium"
+                  ? "text-[#72b5d6] font-medium"
                   : "hover:text-grey-600 hover:font-medium"
               }`}
             >

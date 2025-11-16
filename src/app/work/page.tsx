@@ -123,7 +123,12 @@ const projects: Project[] = [
 export default function WorkPage() {
   return (
     <div className="">
-      <h1 className="text-3xl mb-6 text-[#DBB981]">projects</h1>
+      <h1
+        className="text-3xl mb-6"
+        style={{ color: "var(--heading-light-blue)" }}
+      >
+        projects
+      </h1>
 
       <div className="space-y-12">
         {projects.map((project, index) => (

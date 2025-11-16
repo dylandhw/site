@@ -6,7 +6,12 @@ export default function Blog() {
 
   return (
     <main>
-      <h1 className="text-3xl mb-6 text-[#DBB981]">blog</h1>
+      <h1
+        className="text-3xl mb-6"
+        style={{ color: "var(--heading-light-blue)" }}
+      >
+        blog
+      </h1>
 
       <div className="space-y-8">
         {posts.map((post) => (
