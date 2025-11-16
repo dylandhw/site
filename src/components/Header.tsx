@@ -8,7 +8,7 @@ export default function Header() {
   const [time, setTime] = useState("");
   const [discordStatus, setDiscordStatus] = useState("online");
 
-  // Clock logic
+  // clock
   useEffect(() => {
     function updateClock() {
       const now = new Date();
@@ -24,12 +24,11 @@ export default function Header() {
     return () => clearInterval(interval);
   }, []);
 
-  // Randomly pick Discord status every 2 hours
   useEffect(() => {
     const statuses = [
       { label: "online", color: "bg-green-500" },
       { label: "idle", color: "bg-yellow-500" },
-      { label: "do not disturb", color: "bg-red-500" },
+      { label: "do-not-disturb", color: "bg-red-500" },
     ];
 
     function pickRandomStatus() {
@@ -75,7 +74,6 @@ export default function Header() {
         <span className="text-gray-600 text-sm">{time}</span>
       </div>
 
-      {/* CENTERED NAV */}
       <div className="max-w-4xl mx-auto flex justify-center">
         <nav className="flex gap-6 text-lg">
           {navItems.map((item) => {
