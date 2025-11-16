@@ -56,7 +56,7 @@ export default function Home() {
   return (
     <>
       <h1 className="text-3xl mb-6 flex items-center gap-4 text-[#DBB981]">
-        >> dylan wilkins
+        &gt;&gt; dylan wilkins
         <WhaleAnimation />
       </h1>
 
@@ -69,17 +69,15 @@ export default function Home() {
         &apos;unsolvable&apos; problems.
       </p>
 
-      <h3 className="text-2xl mb-6 text-[#DBB981]">
-        >> who am I?
-      </h3>
+      <h3 className="text-2xl mb-6 text-[#DBB981]">&gt;&gt; who am I?</h3>
       <p>
         I&apos;m a student and software engineer at the University of Central
         Florida, studying computer science and statistics.
       </p>
       <p>
-        My passions lie in computer vision, distributed
-        systems architecture, novel hardware, and advanced algorithm
-        development [in no particular order].
+        My passions lie in computer vision, distributed systems architecture,
+        novel hardware, and advanced algorithm development [in no particular
+        order].
       </p>
       <p>
         Outside of technology, I enjoy foreign films (huge fan of french new
@@ -88,7 +86,7 @@ export default function Home() {
       </p>
 
       <h3 className="text-2xl mb-6 text-[#DBB981]">
-        >> featured writings.
+        &gt;&gt; featured writings.
       </h3>
       <div className="space-y-4">
         <article className="space-y-2 flex flex-row gap-4">
