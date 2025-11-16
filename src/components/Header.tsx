@@ -6,23 +6,39 @@ import { useEffect, useState } from "react";
 export default function Header() {
   const pathname = usePathname();
   const [time, setTime] = useState("");
+  const [discordStatus, setDiscordStatus] = useState("online");
 
+  // Clock logic
   useEffect(() => {
     function updateClock() {
       const now = new Date();
-      const formatter = new Intl.DateTimeFormat("en-US", {
-        hour: "numeric",
-        minute: "numeric",
-        second: "numeric",
-        hour12: false,
-        timeZone: "America/New_York",
-      });
+      const hours = now.getHours().toString().padStart(2, "0");
+      const minutes = now.getMinutes().toString().padStart(2, "0");
+      const seconds = now.getSeconds().toString().padStart(2, "0");
       const ms = now.getMilliseconds().toString().padStart(3, "0");
-      setTime(`${formatter.format(now)}.${ms}`);
+      setTime(`${hours}:${minutes}:${seconds}.${ms}`);
     }
 
     updateClock();
-    const interval = setInterval(updateClock, 10); // update every 10ms for smooth ms counter
+    const interval = setInterval(updateClock, 10);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Randomly pick Discord status every 2 hours
+  useEffect(() => {
+    const statuses = [
+      { label: "online", color: "bg-green-500" },
+      { label: "idle", color: "bg-yellow-500" },
+      { label: "do not disturb", color: "bg-red-500" },
+    ];
+
+    function pickRandomStatus() {
+      const random = statuses[Math.floor(Math.random() * statuses.length)];
+      setDiscordStatus(random.label);
+    }
+
+    pickRandomStatus(); // initial pick
+    const interval = setInterval(pickRandomStatus, 2 * 60 * 60 * 1000); // every 2 hours
     return () => clearInterval(interval);
   }, []);
 
@@ -33,15 +49,29 @@ export default function Header() {
     { href: "/blog", label: "blog" },
   ];
 
+  const statusColorMap = {
+    online: "bg-green-500",
+    idle: "bg-yellow-500",
+    "do not disturb": "bg-red-500",
+  };
+
   return (
     <header className="relative w-full py-2">
-      {/* LEFT DOG + CLOCK */}
-      <div className="top-2 left-4 flex items-center gap-3 z-50">
+      <div className="top-2 left-4 flex items-center gap-2 z-50">
         <img
-          src="/dogwoof.jpg"
+          src="/me.jpg"
           alt="logo"
           className="w-8 h-8 rounded-lg object-cover"
         />
+
+        <span
+          className={`w-2 h-2 rounded-full ${statusColorMap[discordStatus]}`}
+        />
+
+        {/* Status text */}
+        <span className="text-sm text-gray-600">{discordStatus}</span>
+
+        {/* Clock */}
         <span className="text-gray-600 text-sm">{time}</span>
       </div>
 
