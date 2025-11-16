@@ -8,7 +8,7 @@ export default function Header() {
   const [time, setTime] = useState("");
   const [discordStatus, setDiscordStatus] = useState("online");
 
-  // clock
+  // Clock logic
   useEffect(() => {
     function updateClock() {
       const now = new Date();
@@ -24,16 +24,18 @@ export default function Header() {
     return () => clearInterval(interval);
   }, []);
 
+  // Randomly pick Discord status every 2 hours
   useEffect(() => {
-    const statuses = [
-      { label: "online", color: "bg-green-500" },
-      { label: "idle", color: "bg-yellow-500" },
-      { label: "do-not-disturb", color: "bg-red-500" },
+    const statuses: Array<"online" | "idle" | "do-not-disturb" | "offline"> = [
+      "online",
+      "idle",
+      "do-not-disturb",
+      "offline",
     ];
 
     function pickRandomStatus() {
       const random = statuses[Math.floor(Math.random() * statuses.length)];
-      setDiscordStatus(random.label);
+      setDiscordStatus(random);
     }
 
     pickRandomStatus(); // initial pick
@@ -48,14 +50,16 @@ export default function Header() {
     { href: "/blog", label: "blog" },
   ];
 
-  const statusColorMap = {
+  const statusColorMap: Record<string, string> = {
     online: "bg-green-500",
     idle: "bg-yellow-500",
-    "do not disturb": "bg-red-500",
+    "do-not-disturb": "bg-red-500",
+    offline: "bg-gray-600",
   };
 
   return (
     <header className="relative w-full py-2">
+      {/* LEFT: Image -> Circle -> Text -> Clock */}
       <div className="top-2 left-4 flex items-center gap-2 z-50">
         <img
           src="/me.jpg"
@@ -63,8 +67,11 @@ export default function Header() {
           className="w-8 h-8 rounded-lg object-cover"
         />
 
+        {/* Colored circle with fallback */}
         <span
-          className={`w-2 h-2 rounded-full ${statusColorMap[discordStatus]}`}
+          className={`w-2 h-2 rounded-full ${
+            statusColorMap[discordStatus] || "bg-gray-500"
+          }`}
         />
 
         {/* Status text */}
@@ -74,6 +81,7 @@ export default function Header() {
         <span className="text-gray-600 text-sm">{time}</span>
       </div>
 
+      {/* CENTERED NAV */}
       <div className="max-w-4xl mx-auto flex justify-center">
         <nav className="flex gap-6 text-lg">
           {navItems.map((item) => {
