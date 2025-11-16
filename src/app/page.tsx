@@ -1,65 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { Github, NotebookText, Linkedin } from "lucide-react";
 import Link from "next/link";
-
-const TOTAL_FRAMES = 8;
-const ANIMATION_SPEED = 300;
-
-const whaleFrames = Array.from(
-  { length: TOTAL_FRAMES },
-  (_, i) => `/blue-whale/frames/${i + 1}.png`,
-);
-
-function WhaleAnimation() {
-  const [frame, setFrame] = useState(0);
-  const [xPos, setXPos] = useState(0);
-  const [direction] = useState(1);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      // advance sprite frame
-      setFrame((prev) => (prev + 1) % TOTAL_FRAMES);
-
-      // move whale horizontally
-      setXPos((prev) => {
-        const screenWidth = window.innerWidth - 100;
-        let next = prev + direction * 6;
-        if (next > screenWidth) {
-          next = 0; // reset to left
-        }
-        return next;
-      });
-    }, ANIMATION_SPEED);
-
-    return () => clearInterval(interval);
-  }, [direction]);
-
-  return (
-    <img
-      src={whaleFrames[frame]}
-      alt="Swimming blue whale"
-      style={{
-        width: "80px",
-        height: "50px",
-        objectFit: "contain",
-        display: "block",
-        position: "relative",
-        transform: `translateX(${xPos}px)`,
-      }}
-    />
-  );
-}
 
 export default function Home() {
   return (
     <>
-      <h1 className="text-3xl mb-6 flex items-center gap-4 text-[#DBB981]">
-        &gt;&gt; dylan wilkins
-        <WhaleAnimation />
-      </h1>
-
       <p>
         Humanitatem promovemus technologiā. We advance humanity through
         technology.

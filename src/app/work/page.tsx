@@ -19,7 +19,6 @@ const projects: Project[] = [
     description:
       "An AI-powered satellite traffic management system using hybrid neural networks to predict and prevent collisions in increasingly crowded low Earth orbit.",
 
-    image: "/projects/OrbitAI.png",
     languages: [
       "Python",
       "C#",
@@ -80,7 +79,6 @@ const projects: Project[] = [
     repoUrl: "https://devpost.com/software/moodsic-pjdgzm",
     description:
       "Detects a user's emotional state through facial expression analysis using a webcam and recommends a song that matches or elevates their mood by integrating with Spotify's API.",
-    image: "/projects/Moodsic.png",
     languages: ["Python", "Django", "Typescript", "React", "OpenCV"],
     details: [
       "Frontend developed using React for a responsive UI with live webcam integration.",
