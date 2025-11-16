@@ -10,11 +10,15 @@ export default function Header() {
   useEffect(() => {
     function updateClock() {
       const now = new Date();
-      const hours = now.getHours().toString().padStart(2, "0");
-      const minutes = now.getMinutes().toString().padStart(2, "0");
-      const seconds = now.getSeconds().toString().padStart(2, "0");
+      const formatter = new Intl.DateTimeFormat("en-US", {
+        hour: "numeric",
+        minute: "numeric",
+        second: "numeric",
+        hour12: false,
+        timeZone: "America/New_York",
+      });
       const ms = now.getMilliseconds().toString().padStart(3, "0");
-      setTime(`${hours}:${minutes}:${seconds}.${ms}`);
+      setTime(`${formatter.format(now)}.${ms}`);
     }
 
     updateClock();
@@ -32,13 +36,13 @@ export default function Header() {
   return (
     <header className="relative w-full py-2">
       {/* LEFT DOG + CLOCK */}
-      <div className="fixed top-2 left-4 flex items-center gap-3 z-50">
+      <div className="top-2 left-4 flex items-center gap-3 z-50">
         <img
           src="/dogwoof.jpg"
           alt="logo"
           className="w-8 h-8 rounded-lg object-cover"
         />
-        <span className="text-[#d1d5db] text-sm">{time}</span>
+        <span className="text-gray-600 text-sm">{time}</span>
       </div>
 
       {/* CENTERED NAV */}
