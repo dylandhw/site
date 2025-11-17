@@ -24,13 +24,9 @@ export default function Header() {
     return () => clearInterval(interval);
   }, []);
 
-  // Randomly pick Discord status every 2 hours
   useEffect(() => {
     const statuses: Array<"online" | "idle" | "do-not-disturb" | "offline"> = [
       "online",
-      "idle",
-      "do-not-disturb",
-      "offline",
     ];
 
     function pickRandomStatus() {
@@ -52,14 +48,10 @@ export default function Header() {
 
   const statusColorMap: Record<string, string> = {
     online: "bg-green-500",
-    idle: "bg-yellow-500",
-    "do-not-disturb": "bg-red-500",
-    offline: "bg-gray-600",
   };
 
   return (
     <header className="relative w-full py-2">
-      {/* LEFT: Image -> Circle -> Text -> Clock */}
       <div className="top-2 left-4 flex items-center gap-2 z-50">
         <img
           src="/me.jpg"
