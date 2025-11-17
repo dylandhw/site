@@ -13,8 +13,10 @@ export default function Home() {
         Dylan Wilkins
       </h1>
       <p>
-        Humanitatem promovemus technologiā. We advance humanity through
-        technology.
+        Humanitatem promovemus technologiā.{" "}
+        <span style={{ color: "#718096" }}>
+          We advance humanity through technology.
+        </span>
       </p>
       <p>
         I believe software to be a gift; an extension of the mind to help solve
